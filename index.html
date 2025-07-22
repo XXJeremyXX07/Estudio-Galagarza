@@ -402,5 +402,21 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+        <script>
+  // Espera a que el DOM cargue
+  document.addEventListener('DOMContentLoaded', function() {
+    const whatsappBtn = document.querySelector('.btn-fab.whatsapp');
+    if (whatsappBtn) {
+      whatsappBtn.addEventListener('click', function() {
+        gtag('event', 'clic_whatsapp', {
+          event_category: 'Interacción',
+          event_label: 'Botón WhatsApp Flotante',
+          value: 1
+        });
+      });
+    }
+  });
+</script>
+
 </body>
 </html>
