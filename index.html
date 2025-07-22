@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E1MLJ3EJN7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-E1MLJ3EJN7');
-        
-</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1MLJ3EJN7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-E1MLJ3EJN7');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galagarza & Asociados | Estudio Jurídico</title>
@@ -22,27 +20,130 @@
     <meta name="theme-color" content="#232c3d">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos para la sección de imagen de evento */
+        .event-image-section {
+            padding: 3rem 0;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+        }
+
+        .event-image-section .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .event-image-section h2 {
+            font-family: 'Playfair Display', serif;
+            color: #232c3d;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .event-image-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: #c5a059;
+        }
+
+        .event-image-section p {
+            color: #555;
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        #imagen-evento {
+            display: inline-block;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        #imagen-evento:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        #imagen-evento img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        #imagen-evento:hover img {
+            transform: scale(1.03);
+        }
+
+        /* Efecto overlay para la imagen */
+        #imagen-evento::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(35, 44, 61, 0.3);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 12px;
+        }
+
+        #imagen-evento:hover::after {
+            opacity: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .event-image-section {
+                padding: 2rem 0;
+            }
+            
+            .event-image-section h2 {
+                font-size: 1.8rem;
+            }
+            
+            #imagen-evento img {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    </style>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-        <img src="imagenes/logo-nuevo.png" alt="Logo nuevo"
-     onclick="gtag('event', 'click_logo', { 
-         'event_category': 'Imagen',
-         'event_label': 'Logo nuevo'
-     });"
-     style="cursor: pointer;">
-        <section id="imagen-evento-legal" class="event-image-section">
-  <div class="container">
-    <h2>Reconocimiento Internacional</h2>
-    <a href="https://images.unsplash.com/photo-1581091870622-9c2c1a6d2092" id="imagen-evento">
-      <img src="https://images.unsplash.com/photo-1581091870622-9c2c1a6d2092" 
-           alt="Premio Legal Internacional" 
-           width="400" 
-           style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
-    </a>
-    <p>Haz clic para ver el reconocimiento completo.</p>
-  </div>
+    <img src="imagenes/logo-nuevo.png" alt="Logo nuevo"
+         onclick="gtag('event', 'click_logo', { 
+             'event_category': 'Imagen',
+             'event_label': 'Logo nuevo'
+         });"
+         style="cursor: pointer;">
+    
+    <!-- Sección de imagen de evento con los estilos incorporados -->
+    <section id="imagen-evento-legal" class="event-image-section">
+        <div class="container">
+            <h2>Reconocimiento Internacional</h2>
+            <a href="https://images.unsplash.com/photo-1581091870622-9c2c1a6d2092" id="imagen-evento">
+                <img src="https://images.unsplash.com/photo-1581091870622-9c2c1a6d2092" 
+                     alt="Premio Legal Internacional" 
+                     width="400">
+            </a>
+            <p>Haz clic para ver el reconocimiento completo.</p>
+        </div>
 </section>
 
     <!-- Botones sociales flotantes a la derecha -->
